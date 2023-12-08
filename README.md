@@ -11,7 +11,7 @@ Use this tool to download all documents in your Dropbox Sign (ex HelloSign) acco
 
 ## Requirements
 
-Ruby 3 (this was written for Ruby 3.2.1)
-Dropbox account
-Dropbox API key (available on all accounts, as of December 2023)
+- Ruby 3 (this was written for Ruby 3.2.1)
+- Dropbox account
+- Dropbox API key (available on all accounts, as of December 2023)
 
