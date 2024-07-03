@@ -27,6 +27,7 @@ class Downloader
       if sr.signature_requests.size > 0
         signature_requests += sr.signature_requests
         page += 1
+        sleep(2.5) # API restricted to 25 requests per minute
       else
         continue = false
       end
@@ -57,4 +58,5 @@ puts "\nFound #{signature_requests.size} requests\n"
 signature_requests.each_with_index do |sr, i|
   puts "Downloading file #{i+1}: #{sr.title}"
   downloader.download_signature_request(sr)
+  sleep(2.5) # API restricted to 25 requests per minute
 end
